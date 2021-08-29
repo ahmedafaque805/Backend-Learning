@@ -1,0 +1,17 @@
+{
+  "name": "express-js",
+  "version": "1.0.0",
+  "description": "Learning Express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Afaque Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.12",
+    "uuid": "^8.3.2"
+  }
+}
