@@ -48,7 +48,6 @@ router.put('/:id' , (req,res) => {
                member.email = update.email ? update.email : member.email
             
                res.json({msg : 'Member Update', Member})
-
             }
        })
     }else{
