@@ -1,20 +1,24 @@
 import './App.css';
 import useCounter from "./UseCounter";
-import useNameChange from "./UsenameChange";
+import Home from './Home';
+import useParam from './useParam';
 
 function App() {
   const CounterState = useCounter()
-  const NameState = useNameChange(); 
+  const [name , email] = useParam('Afaque Ahmed', 'afaque@gmail.com')
   return (
-    <div className="App">
+    <>
       <h1> Count : {CounterState.Counter.count} </h1>
       <button onClick={CounterState.onPlus} >+</button>
       <button className='minus' onClick={CounterState.onMinus} >-</button>
-    
-    <h1> Name : {NameState.Name} </h1>
-    <input placeholder='Enter Your Name' value={NameState.Name} onChange={NameState.onChange} />
-    <button onClick={NameState.ChangeBtn}> Update </button>
-    </div>
+      <Home />
+      <br />
+      <br />
+
+      <h1> {name} </h1>
+      <h1> {email} </h1>
+
+    </>
   );
 }
 
